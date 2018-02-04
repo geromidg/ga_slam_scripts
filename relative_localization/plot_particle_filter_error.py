@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 
+import sys
+import os
+
 import rosbag
 
-filename = '/home/dimi/2018-02-02-16-47-28.bag'
+sys.path.append(os.path.realpath('../../ga_slam_experiment_bags'))
+filename = 'relative_localization/global_and_slam_paths_1_particle.bag'
+
 # node = 'ga_slam_visualization'
 # topics = ['global_pose_path', 'slam_pose_path']
 
